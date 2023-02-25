@@ -1,0 +1,27 @@
+import java.util.*;
+import java.util.Scanner;
+class dtyw
+{
+ public static void main(String args[])
+ {
+ try 
+ {
+ Scanner s = new Scanner(System.in);
+ System.out.print("Enter days:");
+ int m = s.nextInt();
+ int year = m / 365;
+ m = m % 365;
+ System.out.println("No. of years:"+year);
+ int week = m / 7;
+ m = m % 7;
+ System.out.println("No. of weeks:"+week);
+ int days = m;
+ System.out.println("No. of days:"+days);
+ }
+ catch(Exception e)
+ {
+  System.out.println("enter valid input");
+ 
+ }
+ }
+}
